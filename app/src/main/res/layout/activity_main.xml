@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgray">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_food_korea"
+        android:onClick="onClick"
+        android:text="뒤로"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/cocoa"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/imageview_1"
+            android:layout_width="196dp"
+            android:layout_height="221dp"
+            app:srcCompat="@drawable/_2"
+            android:onClick="onClick_1"/>
+
+        <ImageView
+            android:id="@+id/imageview_2"
+            android:layout_width="196dp"
+            android:layout_height="221dp"
+            android:onClick="onClick_2"
+            app:srcCompat="@drawable/_5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나정식당"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#한식 #맛집 #중앙시장"
+        android:textColor="@color/black"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar1"
+        android:numStars="5"
+        android:stepSize="1"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="리뷰쓰기"
+        android:onClick="Clickbutton"
+        android:id="@+id/btn_review"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/cocoa"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

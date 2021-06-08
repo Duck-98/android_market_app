@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightgray">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:text="천안 시장 알아 보기"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:layout_margin="10dp"
+            android:id="@+id/market_info"
+            android:backgroundTint="@color/cocoa"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:text="시장 위치 및 빠른 길 찾기"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:layout_margin="10dp"
+            android:id="@+id/market_play"
+            android:backgroundTint="@color/cocoa"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:text="시장 먹거리 보러 가기"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:layout_margin="10dp"
+            android:id="@+id/market_food"
+            android:backgroundTint="@color/cocoa"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:text="맛집 예약 하러 가기"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:layout_margin="10dp"
+            android:id="@+id/market_reserve"
+            android:backgroundTint="@color/cocoa"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
